@@ -9,6 +9,12 @@ class Customer
         $this->db = new Database;
     }
 
+    /**
+     * Store customer to database
+     *
+     * @param $data
+     * @return bool
+     */
     public function addCustomer($data)
     {
         // prepare query
@@ -30,6 +36,11 @@ class Customer
 
     }
 
+    /**
+     * Get customers from database
+     *
+     * @return mixed
+     */
     public function getCustomers()
     {
         // prepare query

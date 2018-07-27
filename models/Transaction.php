@@ -9,6 +9,12 @@ class Transaction
         $this->db = new Database;
     }
 
+    /**
+     * Store transaction to database
+     *
+     * @param $data
+     * @return bool
+     */
     public function addTransaction($data)
     {
         // prepare query
@@ -32,6 +38,11 @@ class Transaction
 
     }
 
+    /**
+     * Get transactions from database
+     *
+     * @return mixed
+     */
     public function getTransactions()
     {
         // prepare query
